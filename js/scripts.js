@@ -19,7 +19,12 @@ $(document).ready(function() {
 
 //BACK END LOGIC
 function beepBoop(input) {
-  var output;
-  console.log(input);
+  var outputArray =[];
+  for (var i = 0; i <= input; i++) {
+    var element = i;
+    outputArray.push(element.toString());
+  }
+  console.log(outputArray);
+  var output = outputArray.join(", ");
   return output;
 }
