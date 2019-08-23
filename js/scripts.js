@@ -6,11 +6,15 @@ $(document).ready(function() {
     var output = beepBoop(input);
     $("#output").text(output);
   });
+  $("#clear").click(function() {
+    $("#input").trigger("reset");
+    $("#output").text("");
+  });
 });
 
 //BACK END LOGIC
 function beepBoop(input) {
   var output;
-  
+
   return output;
 }
