@@ -16,14 +16,25 @@ $(document).ready(function() {
     $("#output").text("");
   });
 });
-
 //BACK END LOGIC
 function beepBoop(input) {
   var outputArray =[];
   for (var i = 0; i <= input; i++) {
     var element = i;
-    outputArray.push(element.toString());
+    outputArray.push(element);
   }
+  console.log(outputArray);
+
+
+  for (var i = 0; i < outputArray.length; i++) {
+    if (outputArray[i] === 3) {
+      outputArray[i] = "I'm sorry, Dave, I'm afraid I can't do that";
+      console.log("WE GOT HERE");
+    }
+  }
+
+
+
   console.log(outputArray);
   var output = outputArray.join(", ");
   return output;
