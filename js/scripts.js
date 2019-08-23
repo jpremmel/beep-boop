@@ -4,13 +4,13 @@ $(document).ready(function() {
     event.preventDefault();
     var input = parseInt($("#number-input").val());
     var output;
-    if (input < 1) {
+    if (input < 1 || !input) {
       output = "Please enter a number greater than 0.";
     } else {
       output = beepBoop(input).join(", ");
+      $("#bottom").show();
     }
     $("#output").text(output);
-    $("#bottom").show();
   });
   $("#clear").click(function() {
     $("#input").trigger("reset");
@@ -18,9 +18,15 @@ $(document).ready(function() {
     $("#bottom").hide();
   });
   $("#reverse").click(function() {
-    var originalArray = beepBoop(parseInt($("#number-input").val()));
-    var reverseArray = originalArray.reverse();
-    $("#output").text(reverseArray.join(", "));
+    var input = parseInt($("#number-input").val());
+    var output;
+    if (input < 1 || !input) {
+      output = "Please enter a number greater than 0.";
+    } else {
+      var originalArray = beepBoop(input);
+      output = originalArray.reverse().join(", ");
+    }
+    $("#output").text(output);
   });
 });
 //BACK END LOGIC
