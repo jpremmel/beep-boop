@@ -7,7 +7,7 @@ $(document).ready(function() {
     if (input < 1) {
       output = "Please enter a number greater than 0.";
     } else {
-      output = beepBoop(input);
+      output = beepBoop(input).join(", ");
     }
     $("#output").text(output);
     $("#bottom").show();
@@ -16,6 +16,11 @@ $(document).ready(function() {
     $("#input").trigger("reset");
     $("#output").text("");
     $("#bottom").hide();
+  });
+  $("#reverse").click(function() {
+    var originalArray = beepBoop(parseInt($("#number-input").val()));
+    var reverseArray = originalArray.reverse();
+    $("#output").text(reverseArray.join(", "));
   });
 });
 //BACK END LOGIC
@@ -33,6 +38,5 @@ function beepBoop(input) {
       outputArray[i] = "Beep!";
     }
   }
-  var output = outputArray.join(", ");
-  return output;
+  return outputArray;
 }
