@@ -10,10 +10,12 @@ $(document).ready(function() {
       output = beepBoop(input);
     }
     $("#output").text(output);
+    $("#bottom").show();
   });
   $("#clear").click(function() {
     $("#input").trigger("reset");
     $("#output").text("");
+    $("#bottom").hide();
   });
 });
 //BACK END LOGIC

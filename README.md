@@ -8,7 +8,7 @@
 
 * _If the user inputs a negative number, an error message is displayed._
   * _Example input: -3_
-  * _Example output: Please enter a positive number._
+  * _Example output: Please enter a number greater than zero._
 * _The program returns a range of numbers from 0 to the user's inputted number._
   * _Example input: 4_
   * _Example output: 0, 1, 2, 3, 4_
