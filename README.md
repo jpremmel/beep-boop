@@ -12,15 +12,15 @@
 * _The program returns a range of numbers from 0 to the user's inputted number._
   * _Example input: 4_
   * _Example output: 0, 1, 2, 3, 4_
-* _For any number in the outputted list that contains the digit 3, that entire number is replaced with the phrase "I'm sorry, Dave. I'm afraid I can't do that."_
+* _For any number in the outputted list that contains the digit 3, that entire number is replaced with the phrase "I'm sorry, Dave. I'm afraid I can't do that"_
   * _Example input: 4_
-  * _Example output: 0, 1, 2, I'm sorry, Dave, I'm afraid I can't do that, 4_
+  * _Example output: 0, 1, 2, I'm sorry, Dave. I'm afraid I can't do that, 4_
 * _For any number in the outputted list that contains the digit 2 (but not the digit 3), that entire number is replaced with the phrase "Boop!"_
   * _Example input: 4_
-  * _Example output: 0, 1, Boop!, I'm sorry, Dave, I'm afraid I can't do that, 4_
+  * _Example output: 0, 1, Boop!, I'm sorry, Dave. I'm afraid I can't do that, 4_
 * _For any number in the outputted list that contains the digit 1 (but not the digit 2 nor the digit 3), that entire number is replaced with the phrase "Beep!"_
   * _Example input: 4_
-  * _Example output: 0, Beep!, Boop!, I'm sorry, Dave, I'm afraid I can't do that, 4_
+  * _Example output: 0, Beep!, Boop!, I'm sorry, Dave. I'm afraid I can't do that, 4_
 
 ## Setup/Installation Requirements
 
