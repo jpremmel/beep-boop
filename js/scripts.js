@@ -20,11 +20,9 @@ $(document).ready(function() {
 function beepBoop(input) {
   var outputArray =[];
   for (var i = 0; i <= input; i++) {
-    var element = i;
-    outputArray.push(element.toString());
+    outputArray.push(i.toString());
   }
   for (var i = 0; i < outputArray.length; i++) {
-
     if (outputArray[i].includes(3)) {
       outputArray[i] = "I'm sorry, Dave, I'm afraid I can't do that";
     } else if (outputArray[i].includes(2)) {
