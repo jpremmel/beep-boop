@@ -30,6 +30,10 @@ function beepBoop(input) {
 
     if (outputArray[i].toString().includes(3)) {
       outputArray[i] = "I'm sorry, Dave, I'm afraid I can't do that";
+    } else if (outputArray[i].toString().includes(2)) {
+      outputArray[i] = "Boop!";
+    } else if (outputArray[i].toString().includes(1)) {
+      outputArray[i] = "Beep!";
     }
   }
 
