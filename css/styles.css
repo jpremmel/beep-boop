@@ -8,14 +8,10 @@ h1 {
 }
 
 form {
+  display: inline;
   text-align: center;
 }
 
 #output {
   margin: 15px;
-}
-
-#bottom {
-  text-align: center;
-  display: none;
 }

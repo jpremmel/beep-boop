@@ -4,23 +4,18 @@ $(document).ready(function() {
     event.preventDefault();
     var input = parseInt($("#number-input").val());
     var output;
-    if (input < 1 || !input) {
+    if (input < 1) {
       output = "Please enter a number greater than 0.";
     } else {
+      console.log("WE GOT HERE");
       output = beepBoop(input).join(", ");
-      $("#bottom").show();
     }
     $("#output").text(output);
-  });
-  $("#clear").click(function() {
-    $("#input").trigger("reset");
-    $("#output").text("");
-    $("#bottom").hide();
   });
   $("#reverse").click(function() {
     var input = parseInt($("#number-input").val());
     var output;
-    if (input < 1 || !input) {
+    if (input < 1) {
       output = "Please enter a number greater than 0.";
     } else {
       var originalArray = beepBoop(input);
