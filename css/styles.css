@@ -15,6 +15,13 @@ form {
   display: inline;
 }
 
+#number-input {
+  border: 1px solid transparent;
+  border-radius: 4px;
+  border-color: #4cae4c;
+  padding: 5px 6px;
+}
+
 #output {
   margin: 15px;
 }

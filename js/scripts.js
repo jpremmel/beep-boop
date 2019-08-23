@@ -32,7 +32,7 @@ function beepBoop(input) {
   }
   for (var i = 0; i < outputArray.length; i++) {
     if (outputArray[i].includes(3)) {
-      outputArray[i] = "I'm sorry, Dave, I'm afraid I can't do that";
+      outputArray[i] = "I'm sorry, Dave. I'm afraid I can't do that";
     } else if (outputArray[i].includes(2)) {
       outputArray[i] = "Boop!";
     } else if (outputArray[i].includes(1)) {
