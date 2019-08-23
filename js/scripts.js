@@ -3,7 +3,12 @@ $(document).ready(function() {
   $("#input").submit(function(event) {
     event.preventDefault();
     var input = parseInt($("#number-input").val());
-    var output = beepBoop(input);
+    var output;
+    if (input < 1) {
+      output = "Please enter a number greater than 0.";
+    } else {
+      output = beepBoop(input);
+    }
     $("#output").text(output);
   });
   $("#clear").click(function() {
@@ -15,6 +20,6 @@ $(document).ready(function() {
 //BACK END LOGIC
 function beepBoop(input) {
   var output;
-
+  console.log(input);
   return output;
 }
