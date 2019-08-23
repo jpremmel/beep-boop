@@ -27,9 +27,9 @@ function beepBoop(input) {
 
 
   for (var i = 0; i < outputArray.length; i++) {
-    if (outputArray[i] === 3) {
+
+    if (outputArray[i].toString().includes(3)) {
       outputArray[i] = "I'm sorry, Dave, I'm afraid I can't do that";
-      console.log("WE GOT HERE");
     }
   }
 
