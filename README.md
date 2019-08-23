@@ -1,22 +1,31 @@
 # _Beep Boop_
 
-#### _{Brief description of application}, 23 Aug 2019_
+#### _A program that takes a number from the user and generates a response, 23 Aug 2019_
 
 #### By _**Jacqueline Remmel**_
 
 ## Specifications & Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+* _If the user inputs a negative number, an error message is displayed._
+  * _Example input: -3_
+  * _Example output: Please enter a positive number._
+* _The program returns a range of numbers from 0 to the user's inputted number._
+  * _Example input: 4_
+  * _Example output: 0, 1, 2, 3, 4_
+* _For any number in the outputted list that contains the digit 3, that entire number is replaced with the phrase "I'm sorry, Dave. I'm afraid I can't do that."_
+  * _Example input: 4_
+  * _Example output: 0, 1, 2, I'm sorry, Dave, I'm afraid I can't do that, 4_
+* _For any number in the outputted list that contains the digit 2 (but not the digit 3), that entire number is replaced with the phrase "Boop!"_
+  * _Example input: 4_
+  * _Example output: 0, 1, Boop!, I'm sorry, Dave, I'm afraid I can't do that, 4_
+* _For any number in the outputted list that contains the digit 1 (but not the digit 2 nor the digit 3), that entire number is replaced with the phrase "Beep!"_
+  * _Example input: 4_
+  * _Example output: 0, Beep!, Boop!, I'm sorry, Dave, I'm afraid I can't do that, 4_
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
-
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
+* _Clone this repository._
+* _Open the index.html file in a browser._
 
 ## Technologies Used
 
