@@ -27,6 +27,8 @@
 * _Clone this repository._
 * _Open the index.html file in a browser._
 
+_A live version of this project can be viewed at https://jpremmel.github.io/beep-boop/._
+
 ## Technologies Used
 
 _JavaScript, jQuery_
