@@ -3,20 +3,17 @@ $(document).ready(function() {
   $("#input").submit(function(event) {
     event.preventDefault();
     var input = parseInt($("#number-input").val());
-    var output;
     if (input < 1) {
       output = "Please enter a number greater than 0.";
     } else {
-      console.log("WE GOT HERE");
-      output = beepBoop(input).join(", ");
+      var output = beepBoop(input).join(", ");
     }
     $("#output").text(output);
   });
   $("#reverse").click(function() {
     var input = parseInt($("#number-input").val());
-    var output;
     if (input < 1) {
-      output = "Please enter a number greater than 0.";
+      var output = "Please enter a number greater than 0.";
     } else {
       var originalArray = beepBoop(input);
       output = originalArray.reverse().join(", ");
